@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-http": "workspace:*"
+    "react-http-renderer": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",

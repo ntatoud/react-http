@@ -1,7 +1,21 @@
 {
-  "name": "react-http",
+  "name": "react-http-renderer",
   "version": "0.1.0",
   "description": "A React renderer for HTTP servers",
+  "author": "ntatoud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntatoud/react-http.git",
+    "directory": "packages/react-http-renderer"
+  },
+  "homepage": "https://github.com/ntatoud/react-http#readme",
+  "bugs": {
+    "url": "https://github.com/ntatoud/react-http/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -18,8 +32,7 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "keywords": ["react", "http", "server", "renderer"],
-  "license": "MIT",
+  "keywords": ["react", "http", "server", "renderer", "jsx", "declarative", "reconciler"],
   "dependencies": {
     "react": "^18.2.0",
     "react-reconciler": "^0.29.0"
