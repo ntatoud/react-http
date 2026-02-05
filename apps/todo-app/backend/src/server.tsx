@@ -10,7 +10,7 @@ import {
   Middleware,
   type RequestContext,
   type MiddlewareHandler,
-} from 'react-http';
+} from 'react-http-renderer';
 
 // ============================================================================
 // Types
