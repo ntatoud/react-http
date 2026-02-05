@@ -14,7 +14,7 @@ interface MatchedRoute {
   middlewares: MiddlewareHandler[];
 }
 
-function parseQueryString(queryString: string): Record<string, string> {
+export function parseQueryString(queryString: string): Record<string, string> {
   const query: Record<string, string> = {};
   if (!queryString) return query;
 
@@ -28,7 +28,7 @@ function parseQueryString(queryString: string): Record<string, string> {
   return query;
 }
 
-function matchPath(
+export function matchPath(
   pattern: string,
   path: string,
 ): { match: boolean; params: Record<string, string> } {
@@ -55,7 +55,7 @@ function matchPath(
   return { match: true, params };
 }
 
-function findRoute(
+export function findRoute(
   nodes: ServerNode[],
   method: HttpMethod,
   path: string,
@@ -117,7 +117,7 @@ function findRoute(
   return null;
 }
 
-function joinPaths(...paths: string[]): string {
+export function joinPaths(...paths: string[]): string {
   const joined = paths
     .map((p) => p.replace(/^\/+|\/+$/g, ""))
     .filter(Boolean)
@@ -125,7 +125,7 @@ function joinPaths(...paths: string[]): string {
   return "/" + joined;
 }
 
-async function parseBody(req: IncomingMessage): Promise<any> {
+export async function parseBody(req: IncomingMessage): Promise<any> {
   return new Promise((resolve) => {
     const chunks: Buffer[] = [];
     req.on("data", (chunk) => chunks.push(chunk));

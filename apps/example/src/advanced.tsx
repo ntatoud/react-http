@@ -8,8 +8,8 @@ import {
   Put,
   Delete,
   Middleware,
-} from '../src/index.js';
-import type { RequestContext, MiddlewareHandler } from '../src/index.js';
+} from 'react-http';
+import type { RequestContext, MiddlewareHandler } from 'react-http';
 
 // =============================================================================
 // MIDDLEWARES
