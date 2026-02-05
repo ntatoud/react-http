@@ -27,6 +27,10 @@
 
 ---
 
+> **Disclaimer:** This is a fun, experimental project built for learning and exploration. It is **not intended for production use**. If you need a battle-tested HTTP framework, check out [Express](https://expressjs.com), [Fastify](https://fastify.dev), or [Hono](https://hono.dev).
+
+---
+
 ## Overview
 
 **react-http-renderer** uses a custom [React Reconciler](https://github.com/facebook/react/tree/main/packages/react-reconciler) to transform JSX component trees into HTTP routing structures. Instead of rendering to the DOM, it renders to a fully functional HTTP server powered by Node's built-in `http` module.
