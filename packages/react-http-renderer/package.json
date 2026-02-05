@@ -1,6 +1,6 @@
 {
   "name": "react-http-renderer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A React renderer for HTTP servers",
   "author": "ntatoud",
   "license": "MIT",
@@ -25,14 +25,24 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "keywords": ["react", "http", "server", "renderer", "jsx", "declarative", "reconciler"],
+  "keywords": [
+    "react",
+    "http",
+    "server",
+    "renderer",
+    "jsx",
+    "declarative",
+    "reconciler"
+  ],
   "dependencies": {
     "react": "^18.2.0",
     "react-reconciler": "^0.29.0"
