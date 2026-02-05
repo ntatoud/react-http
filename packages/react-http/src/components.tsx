@@ -7,8 +7,8 @@ export interface ServerProps {
   children?: ReactNode;
 }
 
-export function Server({ children }: ServerProps): React.ReactElement {
-  return React.createElement('server', {}, children);
+export function Server({ port, children }: ServerProps): React.ReactElement {
+  return React.createElement('server', { port }, children);
 }
 
 export interface RouteProps {
